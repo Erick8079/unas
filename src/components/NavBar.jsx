@@ -9,7 +9,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { FaRegCopy } from "react-icons/fa";
 import { BsImages } from "react-icons/bs";
 
-import logo from "../Uploads/img/service/logo2.jpg";
+import logo from "../Uploads/img/service/logo-mag.svg";
 
 import "./navbar.css";
 

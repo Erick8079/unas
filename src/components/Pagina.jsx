@@ -10,7 +10,7 @@ const Pagina = () => {
 
   useEffect(() => {
     const apiPagina = async () => {
-      const url = `https://immense-waters-01806.herokuapp.com/blogs/${id}`;
+      const url = `${import.meta.env.VITE_FRONTEND_URL}/blogs/${id}`;
       const { data } = await axios(url);
       setData(data);
     };

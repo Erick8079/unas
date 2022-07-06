@@ -10,7 +10,7 @@ const SectionAcrilico = ({ item }) => {
 
   useEffect(() => {
     const consultaapi = async () => {
-      const url = `https://immense-waters-01806.herokuapp.com/acrilicos/${id}`;
+      const url = `${import.meta.env.VITE_FRONTEND_URL}/acrilicos/${id}`;
       const { data } = await axios(url);
       setImage(data);
     };

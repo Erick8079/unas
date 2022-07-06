@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
-import img from "../Uploads/img/service/logo2.jpg";
+import img from "../Uploads/img/service/logo-mag.svg";
 
 const About = () => {
   const [datos, setDatos] = useState({});
@@ -9,8 +9,9 @@ const About = () => {
 
   useEffect(() => {
     const apiAbout = async () => {
-      const url = "https://immense-waters-01806.herokuapp.com/nosotros";
+      const url = `${import.meta.env.VITE_FRONTEND_URL}/nosotros`;
       const { data } = await axios(url);
+      console.log(data);
       setDatos(data);
     };
     apiAbout();

@@ -8,7 +8,7 @@ const Natural = () => {
 
   useEffect(() => {
     const consultaapi = async () => {
-      const url = "https://immense-waters-01806.herokuapp.com/encapsulados";
+      const url = `${import.meta.env.VITE_FRONTEND_URL}/encapsulados`;
       const { data } = await axios(url);
       setNatura(data);
     };

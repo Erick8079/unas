@@ -8,7 +8,7 @@ const ManoAlzada = () => {
 
   useEffect(() => {
     const consultaapi = async () => {
-      const url = "https://immense-waters-01806.herokuapp.com/gelishes";
+      const url = `${import.meta.env.VITE_FRONTEND_URL}/gelishes`;
       const { data } = await axios(url);
       setMano(data);
     };

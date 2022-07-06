@@ -8,7 +8,7 @@ const Acrilico = () => {
 
   useEffect(() => {
     const consultaapi = async () => {
-      const url = "https://immense-waters-01806.herokuapp.com/acrilicos";
+      const url = `${import.meta.env.VITE_FRONTEND_URL}/acrilicos`;
       const { data } = await axios(url);
       console.log(data);
       setAcril(data);

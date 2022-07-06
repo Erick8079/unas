@@ -9,7 +9,7 @@ const Blog = () => {
 
   useEffect(() => {
     
-    const url = "https://immense-waters-01806.herokuapp.com/blogs";
+    const url = `${import.meta.env.VITE_FRONTEND_URL}/blogs`;
 
     const apiBlog = async () => {
       const { data } = await axios(url);

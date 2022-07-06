@@ -10,7 +10,7 @@ const Escultural = () => {
     
     useEffect(() => {
         const consultaapi = async () => {
-           const url = "https://immense-waters-01806.herokuapp.com/esculturales"
+           const url = `${import.meta.env.VITE_FRONTEND_URL}/esculturales`;
            const {data} = await axios(url)
            setEsculturales(data);
         }

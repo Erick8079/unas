@@ -9,7 +9,7 @@ const SectionAbout = () => {
 
   useEffect(() => {    
     const apiNosotoros = async () => {
-      const url = "https://immense-waters-01806.herokuapp.com/nosotros";
+      const url = `${import.meta.env.VITE_FRONTEND_URL}/nosotros`;
       const { data } = await axios(url);
       setNosotros(data);
     };

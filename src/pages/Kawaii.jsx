@@ -8,7 +8,7 @@ const Kawaii = () => {
 
   useEffect(() => {
     const consultaapi = async () => {
-      const url = "https://immense-waters-01806.herokuapp.com/kawaiis";
+      const url = `${import.meta.env.VITE_FRONTEND_URL}/kawaiis`;
       const { data } = await axios(url);
       setKawai(data);
     };

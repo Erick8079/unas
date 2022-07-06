@@ -10,7 +10,7 @@ const SectionEscultural = ({ item }) => {
 
   useEffect(() => {
     const consultaapi = async () => {
-      const url = `https://immense-waters-01806.herokuapp.com/esculturales/${id}`;
+      const url = `${import.meta.env.VITE_FRONTEND_URL}/esculturales/${id}`;
       const { data } = await axios(url);
       setImage(data);
     };

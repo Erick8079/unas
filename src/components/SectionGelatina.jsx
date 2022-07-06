@@ -10,7 +10,7 @@ const SectionGelatina = ({item}) => {
 
   useEffect(() => {
     const consultaapi = async () => {
-      const url = `https://immense-waters-01806.herokuapp.com/gelatinas/${id}`;
+      const url = `${import.meta.env.VITE_FRONTEND_URL}/gelatinas/${id}`;
       const { data } = await axios(url);
       setImage(data);
     };
