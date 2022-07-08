@@ -21,7 +21,7 @@ const NavBar = () => {
   };
 
   return (
-    <nav className="flex justify-between text-purple-500 md:text-white uppercase nb py-5 md:px-10 fixed w-full">
+    <nav className="flex justify-between items-center text-purple-500 md:text-white uppercase nb py-5 md:px-10 fixed w-full">
       <Link to="/" className="font-bold uppercase  px-10 text-4xl">
         <img src={logo} alt="" className="w-[55px] rounded-full" />
       </Link>

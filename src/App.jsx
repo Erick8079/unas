@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, HashRouter } from "react-router-dom";
 import Pagina from "./components/Pagina";
 
 import AuthLayout from "./layout/AuthLayout";
@@ -20,7 +20,8 @@ import Gelatina from "./pages/Gelatina";
 
 function App() {
   return (
-    <BrowserRouter>
+    
+    <HashRouter>
       <Routes>
         <Route path="/" element={<AuthLayout />}>
           <Route index element={<Home />}/>
@@ -45,7 +46,7 @@ function App() {
         </Route>
       </Routes>
       
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
